@@ -1,0 +1,10 @@
+ps.1.1
+tex t0
+tex t1
+mov r0.a, t0.a
+mul t1.a, t1.a, v0.a
+cnd r0.a, r0.a, t0_bx2.a, -t0_bx2.a
+mad t0.rgb, r0_bx2.a, c1, c0
+mul_x2 t1.rgb, r0.a, c0
+cnd r0.rgb, r0.a, t0, t1
++ mov r0.a, t1.a

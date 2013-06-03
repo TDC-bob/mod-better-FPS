@@ -1,0 +1,9 @@
+ps.1.1
+def c0, 0.000000, 0.000000, 0.450000, 0.000000
+tex t0
+tex t1
+dp3_sat t0.rgb, t0_bx2, v0_bx2
++ add t1.a, t1_bx2.a, c0.b
+mad r0.rgb, c1, t0, v1
++ mul t0.a, t1.a, t0.a
+mul r0.a, t0.a, v0.a

@@ -1,0 +1,6 @@
+ps.1.1
+tex t0
+tex t1
+dp3_sat t0.rgb, t0_bx2, v0_bx2
++ mul r0.a, t1.a, v0.a
+mad r0.rgb, v1, t0, c0

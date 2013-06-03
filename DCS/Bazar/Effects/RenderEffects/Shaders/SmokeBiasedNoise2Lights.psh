@@ -1,0 +1,14 @@
+ps.1.1
+tex t0
+tex t1
+texcoord t2
+texcoord t3
+dp3_sat t0.rgb, t2_bx2, t1_bx2
++ mul t0.a, t0.a, c1.a
+dp3_sat t1.rgb, t3_bx2, t1_bx2
+mad t0.rgb, v0, t0, c0
++ add t0.a, t1.a, -t0.a
+mad r1.rgb, v1, t1, t0
+mul r0.rgb, c2, r1
++ mul r0.a, t0.a, v0.a
+

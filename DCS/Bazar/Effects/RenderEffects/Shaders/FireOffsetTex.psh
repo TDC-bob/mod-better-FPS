@@ -1,0 +1,6 @@
+ps.1.1
+tex t0
+texbem t1, t0
+tex t2
+mov r0.rgb, t1
++ mul r0.a, c0.a, t2.a
